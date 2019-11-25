@@ -15,4 +15,4 @@ You'll use the debugger to reverse-engineer the code for each level. You can pro
 * knowledge of memory corruption vulnerabilities
 
 
-To start with the CTF one is advised to go through the [lock manual](https://microcorruption.com/manual.pdf) provided by the CTF team. The manual provides of useful information from attackers perspective as well .
+To start with the CTF one is advised to go through the [lock manual](https://microcorruption.com/manual.pdf) provided by the CTF team. The manual provides of useful information from attackers perspective as well. The first thing you will get to know about the product `LockIT Pro` is that it is built on MSP430 microcontroller.

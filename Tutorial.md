@@ -39,7 +39,7 @@ This level is pretty much a walkthrough of the online debugger, assembly and the
 
 Once we hit the first instruction in `check_password` at `0x4484`, the first character of the password you entered is loaded into `r14` from the memory location pointed to in `r15`. In next instructions, registers `r12` and `r15` are incremented. This will continue to iterate until a null byte `\0` is reached, bypassing the jump at `0x448c`, making the `cmp` be the next instruction.
 
-If `r12` ends up being `0x0009` (indicating that out passwords was 8 characters long followed by a null byte), then the jump at `0x4492` will occur, finally calling the interrupt to unlock the lock.
+If `r12` ends up being `0x09` (indicating that out passwords was 8 characters long followed by a null byte), then the jump at `0x4492` will occur, finally calling the interrupt to unlock the lock.
 
 ![](./micro-tut2.jpg)
 
